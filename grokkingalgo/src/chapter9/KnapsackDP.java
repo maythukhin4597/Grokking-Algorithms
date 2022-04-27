@@ -2,7 +2,7 @@ package chapter9;
 
 import java.util.Arrays;
 
-public class KnapsackDPSimple {
+public class KnapsackDP {
     public static void main(String[] args) {
         int[] weights = {1, 4, 3};
         int[] values = {15, 30, 20};
