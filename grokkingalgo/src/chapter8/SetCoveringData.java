@@ -1,13 +1,15 @@
 package chapter8;
 
-import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class SetCoveringData {
 
     static Set<String> getStates() {
-        Set<String> statesNeededToCover = new HashSet<>();
+        Set<String> statesNeededToCover = new LinkedHashSet<>();
         statesNeededToCover.add("mt");
         statesNeededToCover.add("wa");
         statesNeededToCover.add("or");
@@ -19,8 +21,8 @@ public class SetCoveringData {
         return statesNeededToCover;
     }
 
-    static HashMap<String, HashSet> getStations() {
-        HashMap<String, HashSet> stations = new HashMap<>();
+    static Map<String, Set<String>> getStations() {
+        Map<String, Set<String>> stations = new LinkedHashMap<>();
         stations.put("kone", new HashSet() {{
             add("id");
             add("nv");
