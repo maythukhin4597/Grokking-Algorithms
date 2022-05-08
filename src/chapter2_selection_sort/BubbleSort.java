@@ -1,4 +1,4 @@
-package chapter2;
+package chapter2_selection_sort;
 
 import java.util.Arrays;
 

@@ -1,22 +1,21 @@
-package chapter4;
+package chapter4_quick_sort;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class MaxNumberRecursion {
-
+public class SumRecursion {
     public static void main(String[] args) {
-        List<Integer> numList = new LinkedList<>(List.of(1, 2, 3, 4, 5, 45, 12, 3, 4, 22, 3, 10));
-        System.out.println(maxRecursion(numList));
-        int[] numArr = {1, 2, 3, 4, 5, 45, 12, 3, 4, 22, 3, 10};
-        System.out.println(maxRecursion(0, numArr));
+        List<Integer> numList = new LinkedList<>(List.of(1, 2, 3, 4, 5));
+        System.out.println(sumRecursion(numList));
+        int[] numArr = {1, 2, 3, 4, 5};
+        System.out.println(sumRecursion(0, numArr));
     }
 
     /**
      * @param numList Use linkedlist to modify list by removing first item recursively
-     * @return Max number using recursion
+     * @return Sum of numbers using recursion
      */
-    static int maxRecursion(List<Integer> numList) {
+    private static int sumRecursion(List<Integer> numList) {
         if (numList.size() < 1) {
             return 0;
         }
@@ -25,20 +24,21 @@ public class MaxNumberRecursion {
         }
         int temp = numList.get(0);
         numList.remove(0);
-        return Math.max(temp, maxRecursion(numList));
+        return temp + sumRecursion(numList);
     }
 
     /**
      * @param index  Use index to get the item from array
      * @param numArr
-     * @return Max number using recursion
+     * @return Sum of numbers using recursion
      */
-    static int maxRecursion(int index, int[] numArr) {
+    static int sumRecursion(int index, int[] numArr) {
         if (numArr.length < 1 || index >= numArr.length) {
             return 0;
         }
+
         int temp = numArr[index];
-        return Math.max(temp, maxRecursion(++index, numArr));
+        return temp + sumRecursion(++index, numArr);
     }
 
 }

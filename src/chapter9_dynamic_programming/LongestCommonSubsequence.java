@@ -1,4 +1,4 @@
-package chapter9;
+package chapter9_dynamic_programming;
 
 public class LongestCommonSubsequence {
     public static void main(String[] args) {

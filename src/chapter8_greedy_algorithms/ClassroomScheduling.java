@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8_greedy_algorithms;
 
 import util.Tuple;
 

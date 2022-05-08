@@ -1,4 +1,4 @@
-package chapter6;
+package chapter6_breadth_first_search;
 
 import java.util.ArrayDeque;
 import java.util.Collections;

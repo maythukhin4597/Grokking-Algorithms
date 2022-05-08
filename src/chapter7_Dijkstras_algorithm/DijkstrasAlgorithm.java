@@ -1,4 +1,4 @@
-package chapter7;
+package chapter7_Dijkstras_algorithm;
 
 import java.util.ArrayList;
 import java.util.Hashtable;

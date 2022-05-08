@@ -1,4 +1,4 @@
-package chapter1;
+package chapter1_introduction;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package chapter9;
+package chapter9_dynamic_programming;
 
 import java.util.Arrays;
 
